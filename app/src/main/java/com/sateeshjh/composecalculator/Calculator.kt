@@ -18,9 +18,9 @@ import com.sateeshjh.composecalculator.ui.theme.Orange
 
 @Composable
 fun Calculator(
+    modifier: Modifier = Modifier,
     state: CalculatorState,
     buttonSpacing: Dp = 8.dp,
-    modifier: Modifier = Modifier,
     onAction: (CalculatorAction) -> Unit
 ) {
     Box(
@@ -33,14 +33,14 @@ fun Calculator(
             verticalArrangement = Arrangement.spacedBy(buttonSpacing)
         ) {
             Text(
-                text = state.number1 + (state.operation ?: "") + state.number2,
+                text = state.number1 + (state.operation?.symbol ?: "") + state.number2,
                 textAlign = TextAlign.End,
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(vertical = 32.dp),
                 fontWeight = FontWeight.Light,
                 fontSize = 80.sp,
-                color = MaterialTheme.colorScheme.onBackground,
+                color = Color.White,
                 maxLines = 2
             )
             Row(
