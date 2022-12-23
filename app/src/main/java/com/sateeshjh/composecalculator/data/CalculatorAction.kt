@@ -1,4 +1,4 @@
-package com.sateeshjh.composecalculator
+package com.sateeshjh.composecalculator.data
 
 sealed class CalculatorAction {
     data class Number(val number: Int) : CalculatorAction()

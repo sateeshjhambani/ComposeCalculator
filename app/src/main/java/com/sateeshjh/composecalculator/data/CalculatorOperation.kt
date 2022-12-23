@@ -1,4 +1,4 @@
-package com.sateeshjh.composecalculator
+package com.sateeshjh.composecalculator.data
 
 sealed class CalculatorOperation (val symbol: String) {
     object Add: CalculatorOperation("+")

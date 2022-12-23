@@ -4,6 +4,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
+import com.sateeshjh.composecalculator.data.CalculatorAction
+import com.sateeshjh.composecalculator.data.CalculatorOperation
+import com.sateeshjh.composecalculator.data.CalculatorState
 
 class CalculatorViewModel : ViewModel() {
 

@@ -1,4 +1,4 @@
-package com.sateeshjh.composecalculator
+package com.sateeshjh.composecalculator.data
 
 data class CalculatorState(
     val number1: String = "",
